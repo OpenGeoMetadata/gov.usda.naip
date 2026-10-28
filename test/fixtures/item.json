@@ -1,0 +1,163 @@
+{
+  "id": "ri_m_4207161_sw_19_060_20180930_20181211",
+  "bbox": [
+    -71.506181,
+    41.995875,
+    -71.431389,
+    42.066626
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip/items/ri_m_4207161_sw_19_060_20180930_20181211"
+    },
+    {
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=naip&item=ri_m_4207161_sw_19_060_20180930_20181211",
+      "type": "text/html",
+      "title": "Map of item"
+    }
+  ],
+  "assets": {
+    "image": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/ri/2018/ri_060cm_2018/42071/m_4207161_sw_19_060_20180930.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "RGBIR COG tile",
+      "eo:bands": [
+        {
+          "name": "Red",
+          "common_name": "red"
+        },
+        {
+          "name": "Green",
+          "common_name": "green"
+        },
+        {
+          "name": "Blue",
+          "common_name": "blue"
+        },
+        {
+          "name": "NIR",
+          "common_name": "nir",
+          "description": "near-infrared"
+        }
+      ]
+    },
+    "metadata": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/ri/2018/ri_fgdc_2018/42071/m_4207161_sw_19_060_20180930.txt",
+      "type": "text/plain",
+      "roles": [
+        "metadata"
+      ],
+      "title": "FGDC Metdata"
+    },
+    "tilejson": {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=naip&item=ri_m_4207161_sw_19_060_20180930_20181211&assets=image&asset_bidx=image%7C1%2C2%2C3",
+      "type": "application/json",
+      "roles": [
+        "tiles"
+      ],
+      "title": "TileJSON with default rendering"
+    },
+    "thumbnail": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/ri/2018/ri_060cm_2018/42071/m_4207161_sw_19_060_20180930.200.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Thumbnail"
+    },
+    "rendered_preview": {
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=naip&item=ri_m_4207161_sw_19_060_20180930_20181211&assets=image&asset_bidx=image%7C1%2C2%2C3",
+      "type": "image/png",
+      "roles": [
+        "overview"
+      ],
+      "title": "Rendered preview"
+    }
+  },
+  "_msft:ts": "2026-10-17T15:36:33.337159Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -71.431389,
+          41.997426
+        ],
+        [
+          -71.434029,
+          42.066626
+        ],
+        [
+          -71.506181,
+          42.065072
+        ],
+        [
+          -71.503462,
+          41.995875
+        ],
+        [
+          -71.431389,
+          41.997426
+        ]
+      ]
+    ]
+  },
+  "_msft:etag": "5a5c4713-7428-40c2-93a0-698d229539b4",
+  "collection": "naip",
+  "properties": {
+    "gsd": 0.6,
+    "datetime": "2018-09-30T00:00:00Z",
+    "naip:year": 2018,
+    "proj:bbox": [
+      292648.8,
+      4652350.199999999,
+      298623.6,
+      4660040.399999999
+    ],
+    "proj:epsg": 26919,
+    "naip:state": "ri",
+    "proj:shape": [
+      12817,
+      9958
+    ],
+    "proj:transform": [
+      0.6,
+      0.0,
+      292648.8,
+      0.0,
+      -0.6,
+      4660040.399999999,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v1.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

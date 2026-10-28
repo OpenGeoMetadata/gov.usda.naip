@@ -1,0 +1,42 @@
+name: Weekly Harvest
+
+on:
+  schedule:
+    # NAIP gains a few states a year, and USDA and Planetary Computer add them when they can, so once a week is plenty
+    - cron: "0 12 * * 1"
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    # A run takes about half an hour, nearly all of it paging through Planetary Computer's 1.4 million NAIP tiles
+    timeout-minutes: 90
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "4.0"
+
+      - name: Run tests
+        run: for test in test/*_test.rb; do ruby "$test" || exit 1; done
+
+      - name: Run harvester
+        run: ruby harvester.rb
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A metadata-aardvark/ index-maps/ data/
+          # The withdrawal log only exists once an index map has left the catalog
+          if [ -f withdrawn.json ]; then git add withdrawn.json; fi
+          git diff --staged --quiet || git commit -m "Auto-update from weekly harvest"
+          git push

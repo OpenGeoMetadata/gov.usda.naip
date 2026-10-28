@@ -1,0 +1,61 @@
+{
+  "id": "usda-naip-index-fl-2013",
+  "dct_title_s": "Index to NAIP Aerial Imagery of Florida, 2013",
+  "dct_description_sm": [
+    "The National Agriculture Imagery Program (NAIP) is administered by the U.S. Department of Agriculture's Farm Production and Conservation Business Center (FPAC-BC) Geospatial Enterprise Operations (GEO) Branch. NAIP acquires aerial imagery for the contiguous United States (CONUS) during the agricultural growing season, or leaf-on conditions and may contain as much as 10 percent cloud cover per tile. The images are orthorectified which combines the image characteristics of an aerial photograph with the georeferenced qualities of a map. NAIP acquisition from 2002-2017 was at a ground sample distance (GSD) of 1 or 2-meter. In 2018, the ground sample distance standard changed to 0.6 meter with the option for 0.3 meter. The 2025 acquisition consists of approximately half of the states delivered at 60cm and the other half at 30cm ground sample distance. The repeat flying cycle has also changed to no more than a 3-year cycle (generally every other year for most states) from its 5-year cycle back in 2003-2009. Each individual image tile is based on a 3.75-minute longitude by 3.75-minute latitude quarter quadrangle, originally with a 300-meter buffer on all four sides. In 2024 the buffer was changed to 12-meters on all four sides. Tiles in the NAIP collection are natural color (red, green, and blue bands) or color near infrared (red, green, blue, and near infrared bands).",
+    "NAIP imagery provides the ability to effectively administer farm programs, and georeference natural disasters and animal or plant disease outbreaks to support better decision-making."
+  ],
+  "dct_creator_sm": [
+    "United States. Farm Service Agency"
+  ],
+  "dct_publisher_sm": [
+    "United States. Farm Service Agency"
+  ],
+  "schema_provider_s": "Microsoft Planetary Computer",
+  "dct_temporal_sm": [
+    "2013"
+  ],
+  "gbl_indexYear_im": [
+    2013
+  ],
+  "gbl_dateRange_drsim": [
+    "[2013 TO 2013]"
+  ],
+  "dct_spatial_sm": [
+    "Florida"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "gbl_resourceClass_sm": [
+    "Maps",
+    "Imagery"
+  ],
+  "gbl_resourceType_sm": [
+    "Index maps",
+    "Aerial photographs"
+  ],
+  "dcat_theme_sm": [
+    "Imagery"
+  ],
+  "dcat_keyword_sm": [
+    "National Agriculture Imagery Program",
+    "Orthoimagery"
+  ],
+  "dct_format_s": "GeoJSON",
+  "locn_geometry": "ENVELOPE(-87.6875, -80, 31.0625, 24.5)",
+  "dcat_bbox": "ENVELOPE(-87.6875, -80, 31.0625, 24.5)",
+  "pcdm_memberOf_sm": [
+    "usda-naip"
+  ],
+  "dct_rights_sm": [
+    "This index map is dedicated to the public domain under CC0 1.0. The imagery it outlines is in the U.S. Public Domain. USDA's Farm Production and Conservation Business Center asks to be credited in derived products."
+  ],
+  "dct_license_sm": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2026-10-17T16:46:33Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"https://openindexmaps.org\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usda.naip/main/index-maps/usda-naip-index-fl-2013.geojson\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://raw.githubusercontent.com/OpenGeoMetadata/gov.usda.naip/main/index-maps/usda-naip-index-fl-2013.geojson\",\"label\":\"GeoJSON (2.6 MB)\"}],\"http://schema.org/url\":\"https://planetarycomputer.microsoft.com/dataset/naip\"}"
+}

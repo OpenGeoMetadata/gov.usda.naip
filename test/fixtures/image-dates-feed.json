@@ -1,0 +1,666 @@
+{
+ "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+ "@type": "dcat:Catalog",
+ "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+ "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+ "dataset": [
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=ea7614c2738d478b9e7892696c1ad166&sublayer=0",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/ea7614c2738d478b9e7892696c1ad166_0",
+   "title": "2021 Rhode Island Image Dates",
+   "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This hosted feature layer is provided by the USDA FPAC-BC-GEO and shows image acquisition dates for 2021 National Agriculture Imagery Program (NAIP) imagery for Rhode Island.  </span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index is state based and contains a polygon for each exposure used in the creation of the imagery.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following: </div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><ul><li>IDATE - Image acquisition date </li><li>SDATE - Polygon start date/time - local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>EDATE - Polygon end date/time -  local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>BCON - Color type - possible values are NC (natural color), CIR (color infrared), and M4B (4-band)</li><li>CAM_TYPE - Camera type (Digital or film)</li><li>CAM_MAN - Camera Manufacturer</li><li>CAM_MOD - Camera model</li><li>HARD_FIRM - Camera HW and FW version which provides top level information specific to the camera system</li><li>SENSNUM - Sensor or lens serial number</li><li>AC_TYPE - Aircraft type - ICAO designation (i.e. C441 for a Cessna 441 Conquest II), airborne platforms only blank attribute for space-based systems</li><li>ACTAILNUM - Aircraft tail number - airborne platforms only a blank attribute for space-based systems</li><li>SHAPE_AREA - Polygon area (square meters)</li><li>RED_RNGE - Red electromagnetic spectrum - spectrum range in nano meters (604-664)</li><li>GREEN_RNGE - Green electromagnetic spectrum - spectrum range in nano meters (533-587)</li><li>BLUE_RNGE - Blue electromagnetic spectrum - spectrum range in nano meters (420-492)</li><li>NIR_RNGE - Near infrared electromagnetic spectrum - spectrum range in nano meters (683-920)</li></ul></div>",
+   "keyword": [
+    "NAIP",
+    "image",
+    "dates",
+    "geo",
+    "apfo",
+    "2021"
+   ],
+   "issued": "2022-06-06T18:24:29.000Z",
+   "modified": "2022-06-06T19:42:05.983Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-71.9555,41.1118,-71.0444,42.0763",
+   "license": "This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/ea7614c2738d478b9e7892696c1ad166_0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/Seamlines_RI44_2021/FeatureServer/0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "CSV",
+     "format": "CSV",
+     "mediaType": "text/csv",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/csv?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Shapefile",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/shapefile?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoJSON",
+     "format": "GeoJSON",
+     "mediaType": "application/vnd.geo+json",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/geojson?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "KML",
+     "format": "KML",
+     "mediaType": "application/vnd.google-earth.kml+xml",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/kml?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "File Geodatabase",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/filegdb?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Feature Collection",
+     "format": "TXT",
+     "mediaType": "text/plain",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/featureCollection?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Excel",
+     "format": "XLSX",
+     "mediaType": "application/vnd.ms-excel",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/excel?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoPackage",
+     "format": "GPKG",
+     "mediaType": "application/geopackage+sqlite3",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/geoPackage?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "SQLite Geodatabase",
+     "format": "GDB",
+     "mediaType": "application/geopackage+sqlite3",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/ea7614c2738d478b9e7892696c1ad166/sqlite?layers=0"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=b98f42bd9ea04a1ca2b3b2cf9bf5c04a&sublayer=0",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/b98f42bd9ea04a1ca2b3b2cf9bf5c04a_0",
+   "title": "2018 Rhode Island Image Dates",
+   "description": "<p><span style=\"font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\">This feature service is provided by theUSDA FPAC-BC-GEOand shows image acquisition dates for 2018 National Agriculture Imagery Program (NAIP) imagery for Rhode Island.</span></p><div style=\"font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\"></div><div style=\"font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\">This date index is state based and contains a polygon for each exposure used in the creation of the imagery. Click on a polygon to find out more information about any area on the image. Attribute information includes the following:</div><div style=\"font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\"><ul><li>IDATE - Image acquisition date</li><li>SDATE - Polygon start date/time - local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>EDATE - Polygon end date/time -local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>BCON - Color type - possible values are NC (natural color), CIR (color infrared), and M4B (4-band)</li><li>CAM_TYPE - Camera type (Digital or film)</li><li>CAM_MAN - Camera Manufacturer</li><li>CAM_MOD - Camera model</li><li>HARD_FIRM - Camera HW and FW version which provides top level information specific to the camera system</li><li>SENSNUM - Sensor or lens serial number</li><li>AC_TYPE - Aircraft type - ICAO designation (i.e. C441 for a Cessna 441 Conquest II), airborne platforms only blank attribute for space-based systems</li><li>ACTAILNUM - Aircraft tail number - airborne platforms only a blank attribute for space-based systems</li><li>SHAPE_AREA - Polygon area (square meters)</li><li>RED_RNGE - Red electromagnetic spectrum - spectrum range in nano meters (604-664)</li><li>GREEN_RNGE - Green electromagnetic spectrum - spectrum range in nano meters (533-587)</li><li>BLUE_RNGE - Blue electromagnetic spectrum - spectrum range in nano meters (420-492)</li><li>NIR_RNGE - Near infrared electromagnetic spectrum - spectrum range in nano meters (683-920)</li></ul></div>",
+   "keyword": [
+    "2018",
+    "NAIP",
+    "APFO",
+    "Image",
+    "Dates"
+   ],
+   "issued": "2020-03-11T12:54:14.000Z",
+   "modified": "2020-03-24T21:10:21.912Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-71.9440,41.1208,-71.0568,42.0668",
+   "license": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 17px;'>This data is for illustration only.  Not suitable for survey or engineering purposes.  In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/b98f42bd9ea04a1ca2b3b2cf9bf5c04a_0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/RhodeIsland2018Seamlines/FeatureServer/0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "CSV",
+     "format": "CSV",
+     "mediaType": "text/csv",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/b98f42bd9ea04a1ca2b3b2cf9bf5c04a/csv?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Shapefile",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/b98f42bd9ea04a1ca2b3b2cf9bf5c04a/shapefile?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoJSON",
+     "format": "GeoJSON",
+     "mediaType": "application/vnd.geo+json",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/b98f42bd9ea04a1ca2b3b2cf9bf5c04a/geojson?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "KML",
+     "format": "KML",
+     "mediaType": "application/vnd.google-earth.kml+xml",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/b98f42bd9ea04a1ca2b3b2cf9bf5c04a/kml?layers=0"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=dc9762271e22497cb785c51fa7b9e76c&sublayer=1",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/dc9762271e22497cb785c51fa7b9e76c_1",
+   "title": "AL 2013",
+   "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This hosted feature layer is provided by the Farm Production and Conservation Business Center's Geospatial Enterprise Operations Branch (FPAC-BC-GEO) formerly the Aerial Photography Field Office (APFO) and shows the image acquisition dates for the 2013 National Agriculture Imagery Program (NAIP) imagery.  The image dates are important to help the user determine what crops if any can be seen on the imagery.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index contains a polygon for each exposure used in the creation of the imagery.  To view the polygons for a particular state go to the bookmark tab in the upper right of the map.  Once a state is chosen the view will zoom to the state and the polygons will appear.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following:</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Image acquisition date, color type, camera type, camera manufacturer, camera model, camera hardware and firmware version, and aircraft type.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For access, download, and visualization for this and other years of imagery dates please visit the new <a href='https://naip-image-dates-usdaonline.hub.arcgis.com/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>NAIP Image Dates Data Hub.</b></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit; font-size:17px;'>For more information about the NAIP program visit the </span><a href='https://usdaonline.maps.arcgis.com/apps/MapJournal/index.html?appid=2a49c9680a59474489f2e16bf35fd8a9' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>NAIP Informational Map Journal</b></a><span style='font-family:inherit; font-size:17px;'> and the </span><b><a href='https://usdaonline.maps.arcgis.com/apps/MapTour/index.html?appid=445e3dfd16c4401f95f78ad5905a4cce&amp;webmap=6d117f2ede424ace93917e2bc88202b3' style='color:rgb(0, 94, 149); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'>NAIP History Map Tour Story Map</a><span style='font-family:inherit; font-size:17px;'>.</span></b></div>",
+   "keyword": [
+    "NAIP",
+    "Date",
+    "Image",
+    "APFO",
+    "GEO",
+    "2013",
+    "USDA",
+    "FPAC",
+    "FSA"
+   ],
+   "issued": "2015-08-28T16:25:48.000Z",
+   "modified": "2021-07-06T20:21:40.388Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-88.5335,30.1007,-84.8441,35.2079",
+   "license": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/dc9762271e22497cb785c51fa7b9e76c_1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/NAIP_Image_Date_Seamlines_2013/FeatureServer/1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "CSV",
+     "format": "CSV",
+     "mediaType": "text/csv",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/csv?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Shapefile",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/shapefile?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoJSON",
+     "format": "GeoJSON",
+     "mediaType": "application/vnd.geo+json",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/geojson?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "KML",
+     "format": "KML",
+     "mediaType": "application/vnd.google-earth.kml+xml",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/kml?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "File Geodatabase",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/filegdb?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Feature Collection",
+     "format": "TXT",
+     "mediaType": "text/plain",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/featureCollection?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Excel",
+     "format": "XLSX",
+     "mediaType": "application/vnd.ms-excel",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/excel?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoPackage",
+     "format": "GPKG",
+     "mediaType": "application/geopackage+sqlite3",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/geoPackage?layers=1"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "SQLite Geodatabase",
+     "format": "GDB",
+     "mediaType": "application/geopackage+sqlite3",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/dc9762271e22497cb785c51fa7b9e76c/sqlite?layers=1"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=dc9762271e22497cb785c51fa7b9e76c",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/maps/dc9762271e22497cb785c51fa7b9e76c",
+   "title": "NAIP Image Date Seamlines 2013",
+   "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This hosted feature layer is provided by the Farm Production and Conservation Business Center's Geospatial Enterprise Operations Branch (FPAC-BC-GEO) formerly the Aerial Photography Field Office (APFO) and shows the image acquisition dates for the 2013 National Agriculture Imagery Program (NAIP) imagery.  The image dates are important to help the user determine what crops if any can be seen on the imagery.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index contains a polygon for each exposure used in the creation of the imagery.  To view the polygons for a particular state go to the bookmark tab in the upper right of the map.  Once a state is chosen the view will zoom to the state and the polygons will appear.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following:</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Image acquisition date, color type, camera type, camera manufacturer, camera model, camera hardware and firmware version, and aircraft type.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For access, download, and visualization for this and other years of imagery dates please visit the new <a href='https://naip-image-dates-usdaonline.hub.arcgis.com/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>NAIP Image Dates Data Hub.</b></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit; font-size:17px;'>For more information about the NAIP program visit the </span><a href='https://usdaonline.maps.arcgis.com/apps/MapJournal/index.html?appid=2a49c9680a59474489f2e16bf35fd8a9' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>NAIP Informational Map Journal</b></a><span style='font-family:inherit; font-size:17px;'> and the </span><b><a href='https://usdaonline.maps.arcgis.com/apps/MapTour/index.html?appid=445e3dfd16c4401f95f78ad5905a4cce&amp;webmap=6d117f2ede424ace93917e2bc88202b3' style='color:rgb(0, 94, 149); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'>NAIP History Map Tour Story Map</a><span style='font-family:inherit; font-size:17px;'>.</span></b></div>",
+   "keyword": [
+    "NAIP",
+    "Date",
+    "Image",
+    "APFO",
+    "GEO",
+    "2013",
+    "USDA",
+    "FPAC",
+    "FSA"
+   ],
+   "issued": "2015-08-28T16:25:48.000Z",
+   "modified": "2024-04-18T15:00:17.000Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-126.0706,23.7484,-65.6132,55.4999",
+   "license": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/maps/dc9762271e22497cb785c51fa7b9e76c"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/NAIP_Image_Date_Seamlines_2013/FeatureServer"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=842d171a59234c01af86ab5753b47204",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/documents/842d171a59234c01af86ab5753b47204_215091848418",
+   "title": "2022 New Jersey Image Dates",
+   "description": "<div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index is state based and contains a polygon for each exposure used in the creation of the imagery.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following: </div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><ul><li>IDATE - Image acquisition date </li><li>SDATE - Polygon start date/time - local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>EDATE - Polygon end date/time -  local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>BCON - Color type - possible values are NC (natural color), CIR (color infrared), and M4B (4-band)</li><li>CAM_TYPE - Camera type (Digital or film)</li><li>CAM_MAN - Camera Manufacturer</li><li>CAM_MOD - Camera model</li><li>HARD_FIRM - Camera HW and FW version which provides top level information specific to the camera system</li><li>SENSNUM - Sensor or lens serial number</li><li>AC_TYPE - Aircraft type - ICAO designation (i.e. C441 for a Cessna 441 Conquest II), airborne platforms only blank attribute for space-based systems</li><li>ACTAILNUM - Aircraft tail number - airborne platforms only a blank attribute for space-based systems</li><li>SHAPE_AREA - Polygon area (square meters)</li><li>RED_RNGE - Red electromagnetic spectrum - spectrum range in nano meters (604-664)</li><li>GREEN_RNGE - Green electromagnetic spectrum - spectrum range in nano meters (533-587)</li><li>BLUE_RNGE - Blue electromagnetic spectrum - spectrum range in nano meters (420-492)</li><li>NIR_RNGE - Near infrared electromagnetic spectrum - spectrum range in nano meters (683-920)</li></ul></div>",
+   "keyword": [
+    "2022",
+    "NAIP",
+    "Seamlines",
+    "image",
+    "dates",
+    "geo",
+    "apfo",
+    "usda",
+    "fpac"
+   ],
+   "issued": "2023-08-29T14:10:25.000Z",
+   "modified": "2024-03-19T13:38:58.000Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "",
+   "license": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/documents/842d171a59234c01af86ab5753b47204_215091848418"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://nrcs.app.box.com/v/naip/folder/215091848418"
+    }
+   ],
+   "theme": ""
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=4fef8b6ff1704399b3ce561e961a778b&sublayer=0",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/4fef8b6ff1704399b3ce561e961a778b_0",
+   "title": "2018 West Virginia Image Dates",
+   "description": "<font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif'><span style='font-size:16px;'>This feature service is provided by the USDA-FPAC-GEO and shows image acquisition dates for 2018 National Agriculture Imagery Program (NAIP) imagery for West Virginia.  </span></font><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index is state based and contains a polygon for each exposure used in the creation of the imagery.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following: </div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><ul><li>IDATE - Image acquisition date </li><li>SDATE - Polygon start date/time - local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>EDATE - Polygon end date/time -  local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>BCON - Color type - possible values are NC (natural color), CIR (color infrared), and M4B (4-band)</li><li>CAM_TYPE - Camera type (Digital or film)</li><li>CAM_MAN - Camera Manufacturer</li><li>CAM_MOD - Camera model</li><li>HARD_FIRM - Camera HW and FW version which provides top level information specific to the camera system</li><li>SENSNUM - Sensor or lens serial number</li><li>AC_TYPE - Aircraft type - ICAO designation (i.e. C441 for a Cessna 441 Conquest II), airborne platforms only blank attribute for space-based systems</li><li>ACTAILNUM - Aircraft tail number - airborne platforms only a blank attribute for space-based systems</li><li>SHAPE_AREA - Polygon area (square meters)</li><li>RED_RNGE - Red electromagnetic spectrum - spectrum range in nano meters (604-664)</li><li>GREEN_RNGE - Green electromagnetic spectrum - spectrum range in nano meters (533-587)</li><li>BLUE_RNGE - Blue electromagnetic spectrum - spectrum range in nano meters (420-492)</li><li>NIR_RNGE - Near infrared electromagnetic spectrum - spectrum range in nano meters (683-920)</li></ul></div>",
+   "keyword": [
+    "2018",
+    "Image",
+    "Dates",
+    "APFO",
+    "NAIP"
+   ],
+   "issued": "2020-03-05T17:13:38.000Z",
+   "modified": "2020-03-05T17:15:39.626Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-82.6924,37.1844,-77.6815,40.6905",
+   "license": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 17px;'>This data is for illustration only.  Not suitable for survey or engineering purposes.  In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/4fef8b6ff1704399b3ce561e961a778b_0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/2018_West_Virginia_Image_Dates/FeatureServer/0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "CSV",
+     "format": "CSV",
+     "mediaType": "text/csv",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/4fef8b6ff1704399b3ce561e961a778b/csv?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Shapefile",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/4fef8b6ff1704399b3ce561e961a778b/shapefile?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoJSON",
+     "format": "GeoJSON",
+     "mediaType": "application/vnd.geo+json",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/4fef8b6ff1704399b3ce561e961a778b/geojson?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "KML",
+     "format": "KML",
+     "mediaType": "application/vnd.google-earth.kml+xml",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/4fef8b6ff1704399b3ce561e961a778b/kml?layers=0"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=7e83d84422584738afb66a315412ece3&sublayer=0",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/7e83d84422584738afb66a315412ece3_0",
+   "title": "2021 Puerto Rico/Virgin Islands",
+   "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This hosted feature layer is provided by the USDA FPAC-BC-GEO and shows image acquisition dates for 2021 National Agriculture Imagery Program (NAIP) imagery for Puerto Rico/Virgin Islands.  </span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index is state based and contains a polygon for each exposure used in the creation of the imagery.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following: </div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><ul><li>IDATE - Image acquisition date </li><li>SDATE - Polygon start date/time - local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>EDATE - Polygon end date/time -  local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)</li><li>BCON - Color type - possible values are NC (natural color), CIR (color infrared), and M4B (4-band)</li><li>CAM_TYPE - Camera type (Digital or film)</li><li>CAM_MAN - Camera Manufacturer</li><li>CAM_MOD - Camera model</li><li>HARD_FIRM - Camera HW and FW version which provides top level information specific to the camera system</li><li>SENSNUM - Sensor or lens serial number</li><li>AC_TYPE - Aircraft type - ICAO designation (i.e. C441 for a Cessna 441 Conquest II), airborne platforms only blank attribute for space-based systems</li><li>ACTAILNUM - Aircraft tail number - airborne platforms only a blank attribute for space-based systems</li><li>SHAPE_AREA - Polygon area (square meters)</li><li>RED_RNGE - Red electromagnetic spectrum - spectrum range in nano meters (604-664)</li><li>GREEN_RNGE - Green electromagnetic spectrum - spectrum range in nano meters (533-587)</li><li>BLUE_RNGE - Blue electromagnetic spectrum - spectrum range in nano meters (420-492)</li><li>NIR_RNGE - Near infrared electromagnetic spectrum - spectrum range in nano meters (683-920)</li></ul></div>",
+   "keyword": [
+    "2021",
+    "NAIP",
+    "image",
+    "dates",
+    "geo",
+    "apfo",
+    "usda",
+    "fpac"
+   ],
+   "issued": "2023-05-01T20:02:44.000Z",
+   "modified": "2023-05-01T20:02:48.964Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-68.0066,17.6187,-64.5559,18.5688",
+   "license": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/7e83d84422584738afb66a315412ece3_0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/PR_VI_2021_Seams/FeatureServer/0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "CSV",
+     "format": "CSV",
+     "mediaType": "text/csv",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/7e83d84422584738afb66a315412ece3/csv?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Shapefile",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/7e83d84422584738afb66a315412ece3/shapefile?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoJSON",
+     "format": "GeoJSON",
+     "mediaType": "application/vnd.geo+json",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/7e83d84422584738afb66a315412ece3/geojson?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "KML",
+     "format": "KML",
+     "mediaType": "application/vnd.google-earth.kml+xml",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/7e83d84422584738afb66a315412ece3/kml?layers=0"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  },
+  {
+   "@type": "dcat:Dataset",
+   "identifier": "https://www.arcgis.com/home/item.html?id=a9ab579647384d34a5c3b51d8e59b407&sublayer=0",
+   "landingPage": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/a9ab579647384d34a5c3b51d8e59b407_0",
+   "title": "NAIP 2012 Seamlines",
+   "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This hosted feature layer is provided by the Farm Production and Conservation Business Center's Geospatial Enterprise Operations Branch (FPAC-BC-GEO) formerly the Aerial Photography Field Office (APFO) and shows the image acquisition dates for the 2012 National Agriculture Imagery Program (NAIP) imagery.  The image dates are important to help the user determine what crops if any can be seen on the imagery.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This date index contains a polygon for each exposure used in the creation of the imagery.  To view the polygons for a particular state go to the bookmark tab in the upper right of the map.  Once a state is chosen the view will zoom to the state and the polygons will appear.  Click on a polygon to find out more information about any area on the image.  Attribute information includes the following:</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Image acquisition date, color type, camera type, camera manufacturer, camera model, camera hardware and firmware version, and aircraft type.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For access, download, and visualization for this and other years of imagery dates please visit the new <a href='https://naip-image-dates-usdaonline.hub.arcgis.com/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>NAIP Image Dates Data Hub.</b></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-size:17px;'>For more information about the NAIP program visit the </span><a href='https://usdaonline.maps.arcgis.com/apps/MapJournal/index.html?appid=2a49c9680a59474489f2e16bf35fd8a9' style='color:rgb(0, 121, 193); text-decoration-line:none;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>NAIP Informational Map Journal</b></a><span style='font-size:17px;'> and the </span><b><a href='https://usdaonline.maps.arcgis.com/apps/MapTour/index.html?appid=445e3dfd16c4401f95f78ad5905a4cce&amp;webmap=6d117f2ede424ace93917e2bc88202b3' style='color:rgb(0, 94, 149); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'>NAIP History Map Tour Story Map</a><span style='font-family:inherit; font-size:17px;'>.</span></b></div>",
+   "keyword": [
+    "APFO",
+    "NAIP",
+    "2012",
+    "Image date",
+    "FSA",
+    "USDA",
+    "GEO",
+    "FPAC"
+   ],
+   "issued": "2015-03-16T20:06:19.000Z",
+   "modified": "2017-11-13T22:03:53.643Z",
+   "publisher": {
+    "name": "{{source}}"
+   },
+   "contactPoint": {
+    "@type": "vcard:Contact",
+    "fn": "USDA_FPAC-BC",
+    "hasEmail": "{{orgContactEmail}}"
+   },
+   "accessLevel": "public",
+   "spatial": "-124.6350,25.8025,-69.7821,49.0725",
+   "license": "<p><span style=\"font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\">This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).</span></p>",
+   "distribution": [
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS Hub Dataset",
+     "format": "Web Page",
+     "mediaType": "text/html",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/a9ab579647384d34a5c3b51d8e59b407_0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "ArcGIS GeoService",
+     "format": "ArcGIS GeoServices REST API",
+     "mediaType": "application/json",
+     "accessURL": "https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/NAIP_2012_Seamlines/FeatureServer/0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "CSV",
+     "format": "CSV",
+     "mediaType": "text/csv",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/csv?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Shapefile",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/shapefile?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoJSON",
+     "format": "GeoJSON",
+     "mediaType": "application/vnd.geo+json",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/geojson?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "KML",
+     "format": "KML",
+     "mediaType": "application/vnd.google-earth.kml+xml",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/kml?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "File Geodatabase",
+     "format": "ZIP",
+     "mediaType": "application/zip",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/filegdb?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Feature Collection",
+     "format": "TXT",
+     "mediaType": "text/plain",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/featureCollection?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "Excel",
+     "format": "XLSX",
+     "mediaType": "application/vnd.ms-excel",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/excel?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "GeoPackage",
+     "format": "GPKG",
+     "mediaType": "application/geopackage+sqlite3",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/geoPackage?layers=0"
+    },
+    {
+     "@type": "dcat:Distribution",
+     "title": "SQLite Geodatabase",
+     "format": "GDB",
+     "mediaType": "application/geopackage+sqlite3",
+     "accessURL": "https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/a9ab579647384d34a5c3b51d8e59b407/sqlite?layers=0"
+    }
+   ],
+   "theme": [
+    "geospatial"
+   ]
+  }
+ ]
+}

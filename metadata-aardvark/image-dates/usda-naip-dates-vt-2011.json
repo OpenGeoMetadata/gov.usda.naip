@@ -1,0 +1,67 @@
+{
+  "id": "usda-naip-dates-vt-2011",
+  "dct_title_s": "NAIP Image Dates of Vermont, 2011",
+  "dct_alternative_sm": [
+    "VT 2011"
+  ],
+  "dct_description_sm": [
+    "This hosted feature layer is provided by the Farm Production and Conservation Business Center's Geospatial Enterprise Operations Branch (FPAC-BC-GEO) formerly the Aerial Photography Field Office (APFO) and shows the image acquisition dates for the 2011 National Agriculture Imagery Program (NAIP) imagery. The image dates are important to help the user determine what crops if any can be seen on the imagery.",
+    "This date index contains a polygon for each exposure used in the creation of the imagery. To view the polygons for a particular state go to the bookmark tab in the upper right of the map. Once a state is chosen the view will zoom to the state and the polygons will appear. Click on a polygon to find out more information about any area on the image. Attribute information includes the following:",
+    "Image acquisition date, color type, camera type, camera manufacturer, camera model, camera hardware and firmware version, and aircraft type.",
+    "For access, download, and visualization for this and other years of imagery dates please visit the new NAIP Image Dates Data Hub.",
+    "For more information about the NAIP program visit the NAIP Informational Map Journal and the NAIP History Map Tour Story Map."
+  ],
+  "dct_creator_sm": [
+    "United States. Farm Service Agency"
+  ],
+  "dct_publisher_sm": [
+    "United States. Farm Service Agency"
+  ],
+  "schema_provider_s": "U.S. Department of Agriculture",
+  "dct_issued_s": "2015-08-28",
+  "dct_temporal_sm": [
+    "2011"
+  ],
+  "gbl_indexYear_im": [
+    2011
+  ],
+  "gbl_dateRange_drsim": [
+    "[2011 TO 2011]"
+  ],
+  "dct_spatial_sm": [
+    "Vermont"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Imagery"
+  ],
+  "dcat_keyword_sm": [
+    "National Agriculture Imagery Program",
+    "Image acquisition dates"
+  ],
+  "dct_format_s": "GeoJSON",
+  "locn_geometry": "ENVELOPE(-73.514982, -71.422274, 45.073311, 42.676704)",
+  "dcat_bbox": "ENVELOPE(-73.514982, -71.422274, 45.073311, 42.676704)",
+  "pcdm_memberOf_sm": [
+    "usda-naip"
+  ],
+  "dct_source_sm": [
+    "usda-naip-index-vt-2011"
+  ],
+  "dct_rights_sm": [
+    "This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).",
+    "USDA's Farm Production and Conservation Business Center asks to be credited in derived products."
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2017-11-13T22:45:54Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#FeatureLayer\":\"https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/NAIP_Image_Date_Seamlines_2011/FeatureServer/18\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/1b873b7da5484594a93d9f052cd55116/geojson?layers=18\",\"label\":\"GeoJSON\"},{\"url\":\"https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/1b873b7da5484594a93d9f052cd55116/csv?layers=18\",\"label\":\"CSV\"}],\"http://schema.org/url\":\"https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/1b873b7da5484594a93d9f052cd55116_18\"}"
+}

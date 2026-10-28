@@ -1,0 +1,81 @@
+{
+  "id": "usda-naip-dates-nh-2018",
+  "dct_title_s": "NAIP Image Dates of New Hampshire, 2018",
+  "dct_alternative_sm": [
+    "2018 New Hampshire Image Dates"
+  ],
+  "dct_description_sm": [
+    "This feature service is provided by theUSDA-FPAC-GEOand shows image acquisition dates for 2018 National Agriculture Imagery Program (NAIP) imagery for New Hampshire.",
+    "This date index is state based and contains a polygon for each exposure used in the creation of the imagery. Click on a polygon to find out more information about any area on the image. Attribute information includes the following:",
+    "IDATE - Image acquisition date",
+    "SDATE - Polygon start date/time - local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)",
+    "EDATE - Polygon end date/time -local 24 hour clock. The start/end time will be for the collection of the individual polygon (will be the same for frame based systems)",
+    "BCON - Color type - possible values are NC (natural color), CIR (color infrared), and M4B (4-band)",
+    "CAM_TYPE - Camera type (Digital or film)",
+    "CAM_MAN - Camera Manufacturer",
+    "CAM_MOD - Camera model",
+    "HARD_FIRM - Camera HW and FW version which provides top level information specific to the camera system",
+    "SENSNUM - Sensor or lens serial number",
+    "AC_TYPE - Aircraft type - ICAO designation (i.e. C441 for a Cessna 441 Conquest II), airborne platforms only blank attribute for space-based systems",
+    "ACTAILNUM - Aircraft tail number - airborne platforms only a blank attribute for space-based systems",
+    "SHAPE_AREA - Polygon area (square meters)",
+    "RED_RNGE - Red electromagnetic spectrum - spectrum range in nano meters (604-664)",
+    "GREEN_RNGE - Green electromagnetic spectrum - spectrum range in nano meters (533-587)",
+    "BLUE_RNGE - Blue electromagnetic spectrum - spectrum range in nano meters (420-492)",
+    "NIR_RNGE - Near infrared electromagnetic spectrum - spectrum range in nano meters (683-920)"
+  ],
+  "dct_creator_sm": [
+    "United States. Farm Service Agency"
+  ],
+  "dct_publisher_sm": [
+    "United States. Farm Service Agency"
+  ],
+  "schema_provider_s": "U.S. Department of Agriculture",
+  "dct_issued_s": "2020-03-11",
+  "dct_temporal_sm": [
+    "2018-2019"
+  ],
+  "gbl_indexYear_im": [
+    2018,
+    2019
+  ],
+  "gbl_dateRange_drsim": [
+    "[2018 TO 2019]"
+  ],
+  "dct_spatial_sm": [
+    "New Hampshire"
+  ],
+  "dct_language_sm": [
+    "eng"
+  ],
+  "gbl_resourceClass_sm": [
+    "Datasets"
+  ],
+  "gbl_resourceType_sm": [
+    "Polygon data"
+  ],
+  "dcat_theme_sm": [
+    "Imagery"
+  ],
+  "dcat_keyword_sm": [
+    "National Agriculture Imagery Program",
+    "Image acquisition dates"
+  ],
+  "dct_format_s": "GeoJSON",
+  "locn_geometry": "ENVELOPE(-72.568748, -70.557169, 45.316572, 42.683019)",
+  "dcat_bbox": "ENVELOPE(-72.568748, -70.557169, 45.316572, 42.683019)",
+  "pcdm_memberOf_sm": [
+    "usda-naip"
+  ],
+  "dct_source_sm": [
+    "usda-naip-index-nh-2018"
+  ],
+  "dct_rights_sm": [
+    "This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).",
+    "USDA's Farm Production and Conservation Business Center asks to be credited in derived products."
+  ],
+  "dct_accessRights_s": "Public",
+  "gbl_mdModified_dt": "2020-03-11T12:55:23Z",
+  "gbl_mdVersion_s": "Aardvark",
+  "dct_references_s": "{\"urn:x-esri:serviceType:ArcGIS#FeatureLayer\":\"https://services.arcgis.com/LLVEmB8Lsae3Um4s/arcgis/rest/services/NewHampshire2018Seamlines/FeatureServer/0\",\"http://schema.org/downloadUrl\":[{\"url\":\"https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/061a9a0bcf034ab69b8f1104be15ce6d/geojson?layers=0\",\"label\":\"GeoJSON\"},{\"url\":\"https://naip-image-dates-usdaonline.hub.arcgis.com/api/download/v1/items/061a9a0bcf034ab69b8f1104be15ce6d/csv?layers=0\",\"label\":\"CSV\"}],\"http://schema.org/url\":\"https://naip-image-dates-usdaonline.hub.arcgis.com/datasets/061a9a0bcf034ab69b8f1104be15ce6d_0\"}"
+}
