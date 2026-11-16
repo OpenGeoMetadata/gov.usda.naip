@@ -16,7 +16,7 @@ module PlanetaryComputer
 
   # The parts of each item the snapshot keeps (see Tile.row), which make a page a fifth the size of whole items
   FIELDS = %w[id bbox _msft:ts properties.datetime properties.naip:state properties.naip:year properties.proj:epsg
-              assets.image.href assets.thumbnail.href assets.metadata.href].freeze
+              properties.proj:code assets.image.href assets.thumbnail.href assets.metadata.href].freeze
 
   class Error < StandardError; end
 

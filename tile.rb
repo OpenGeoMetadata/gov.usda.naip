@@ -18,8 +18,9 @@ class Tile
   TOLERANCE = 0.0005
 
   # e.g. ri_m_4107129_nw_19_060_20180816_20181211: the state, the DOQQ code, the UTM zone, the resolution and the
-  # date flown, then for some years the date processed
-  ID = /\A[a-z]{2}_(m_(\d{7})_(ne|nw|se|sw))_/
+  # date flown, then for some years the date processed. Arizona's 2025 ids write the quarter in capitals, e.g.
+  # az_m_3411203_NE_12_060_20250526.
+  ID = /\A[a-z]{2}_(m_(\d{7})_(ne|nw|se|sw))_/i
 
   # The snapshot's row for a STAC item: the fields the index maps use, and nothing else the item has
   def self.row(item)
@@ -27,11 +28,24 @@ class Tile
     assets = item['assets'] || {}
     {
       'id' => item['id'], 'bbox' => item['bbox'], 'datetime' => properties['datetime'],
-      'state' => properties['naip:state'], 'year' => properties['naip:year'], 'epsg' => properties['proj:epsg'],
+      'state' => properties['naip:state'], 'year' => year_of(properties), 'epsg' => epsg_of(properties),
       'image' => assets.dig('image', 'href'),
       'thumbnail' => assets.dig('thumbnail', 'href'), 'metadata' => assets.dig('metadata', 'href'),
       'modified' => item['_msft:ts']
     }.compact
+  end
+
+  # The item's NAIP year as a number. The items Planetary Computer added in November 2026, of 2024 and 2025, give it
+  # as a string, the older ones as a number.
+  def self.year_of(properties)
+    year = properties['naip:year']
+    year.nil? ? nil : Integer(year.to_s, 10)
+  end
+
+  # The item's EPSG code as a number: proj:epsg in the older items, and in the ones added in November 2026, which
+  # follow version 2 of the projection extension, proj:code, e.g. EPSG:26919
+  def self.epsg_of(properties)
+    properties['proj:epsg'] || properties['proj:code'].to_s[/\AEPSG:(\d+)\z/, 1]&.to_i
   end
 
   attr_reader :row
@@ -83,9 +97,9 @@ class Tile
     "#{STAC_URL}/#{id}"
   end
 
-  # The DOQQ code, e.g. m_4107129_nw; nil when the id doesn't have one
+  # The DOQQ code, e.g. m_4107129_nw, in lower case whatever the id's case; nil when the id doesn't have one
   def code
-    id.to_s[ID, 1]
+    id.to_s[ID, 1]&.downcase
   end
 
   # The quadrangle the tile quarters, e.g. 4107129
