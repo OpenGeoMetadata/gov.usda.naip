@@ -1,0 +1,147 @@
+{
+  "id": "ri_m_4207161_sw_19_060_20250802",
+  "bbox": [
+    -71.502594,
+    41.998543,
+    -71.434962,
+    42.063955
+  ],
+  "type": "Feature",
+  "links": [
+    {
+      "rel": "collection",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip"
+    },
+    {
+      "rel": "parent",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip"
+    },
+    {
+      "rel": "root",
+      "type": "application/json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/"
+    },
+    {
+      "rel": "self",
+      "type": "application/geo+json",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip/items/ri_m_4207161_sw_19_060_20250802"
+    }
+  ],
+  "assets": {
+    "image": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/ri/2025/ri_060cm_2025/42071/m_4207161_sw_19_060_20250802.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "roles": [
+        "data"
+      ],
+      "title": "RGBIR COG tile",
+      "eo:bands": [
+        {
+          "name": "Red",
+          "common_name": "red"
+        },
+        {
+          "name": "Green",
+          "common_name": "green"
+        },
+        {
+          "name": "Blue",
+          "common_name": "blue"
+        },
+        {
+          "name": "NIR",
+          "common_name": "nir",
+          "description": "near-infrared"
+        }
+      ]
+    },
+    "thumbnail": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/ri/2025/ri_060cm_2025/42071/m_4207161_sw_19_060_20250802.200.jpg",
+      "type": "image/jpeg",
+      "roles": [
+        "thumbnail",
+        "overview"
+      ],
+      "title": "Thumbnail"
+    }
+  },
+  "_msft:ts": "2026-11-12T02:58:50.207994Z",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -71.434962,
+          41.999943
+        ],
+        [
+          -71.437408,
+          42.063955
+        ],
+        [
+          -71.502594,
+          42.062551
+        ],
+        [
+          -71.500083,
+          41.998543
+        ],
+        [
+          -71.434962,
+          41.999943
+        ]
+      ]
+    ]
+  },
+  "_msft:etag": "04d5947e-389b-4488-94a9-c87b3ef77523",
+  "collection": "naip",
+  "properties": {
+    "gsd": 0.6,
+    "datetime": "2025-08-02T16:00:00.000000Z",
+    "naip:year": "2025",
+    "proj:bbox": [
+      292937.4,
+      4652638.2,
+      298335.60000000003,
+      4659751.8
+    ],
+    "proj:code": "EPSG:26919",
+    "providers": [
+      {
+        "url": "https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/",
+        "name": "USDA Farm Service Agency",
+        "roles": [
+          "producer",
+          "licensor"
+        ]
+      }
+    ],
+    "naip:state": "ri",
+    "proj:shape": [
+      11856,
+      8997
+    ],
+    "proj:centroid": {
+      "lat": 42.03125,
+      "lon": -71.46876
+    },
+    "proj:transform": [
+      0.6,
+      0.0,
+      292937.4,
+      0.0,
+      -0.6,
+      4659751.8,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "stac_version": "1.0.0"
+}

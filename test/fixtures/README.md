@@ -19,6 +19,7 @@ The files are plain JSON lines, which the harvester reads like a full snapshot's
 
 The other fixtures:
 - `item.json`: the whole STAC item of Rhode Island's 2018 Franklin SW tile, as the API answered it.
+- `item-2025.json`: the whole STAC item of the same tile in 2025, one of those Planetary Computer added on 2026-11-12, which give `naip:year` as a string and the projection as `proj:code`.
 - `fgdc/`: the FGDC metadata of Rhode Island's 2018 Franklin SW and Kingston OE S NE tiles.
 - `quadrangles.json`: the names of the fixture's quadrangles that have FGDC in some year, as `Quadrangles#fill` read them on 2026-10-27. Hawaii's has no FGDC in any year, and Iowa's is left out, as if it had none.
 - `iso.xml`: USDA's ISO 19115-2 record for NAIP. The harvester test writes it into each snapshot it makes, as `iso.jsonl`.
