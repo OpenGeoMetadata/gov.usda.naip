@@ -67,6 +67,9 @@
   "pcdm_memberOf_sm": [
     "usda-naip"
   ],
+  "dct_source_sm": [
+    "usda-naip-index-ms-2025"
+  ],
   "dct_rights_sm": [
     "This data is for illustration only. Not suitable for survey or engineering purposes. In no event shall the creators, custodians, or distributors of this information be liable for any damages arising out of its use (or the inability to use it).",
     "USDA's Farm Production and Conservation Business Center asks to be credited in derived products."

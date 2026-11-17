@@ -50,6 +50,9 @@
   "pcdm_memberOf_sm": [
     "usda-naip"
   ],
+  "dct_source_sm": [
+    "usda-naip-index-sd-2025"
+  ],
   "dct_rights_sm": [
     "USDA's Farm Production and Conservation Business Center asks to be credited in derived products."
   ],
